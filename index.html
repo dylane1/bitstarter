@@ -2,14 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>My First Bitstarter</title>
+        <title>Travel Map Apps</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+        
+        
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" type="text/css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic" type="text/css">
+        
         <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
         <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
@@ -78,6 +82,34 @@
                 color: white;
             }
 
+            /* Survey */
+            .survey-container {
+                background-color: #343434;
+                padding: 1% 2%;
+            }
+
+            .survey h3 {
+                color: white;
+            }
+
+            .survey p {
+                text-align: left;
+                font-size: 14px;
+                color: white;
+                /*padding:9px 15px;*/
+            }
+
+            .survey-accordion{margin-bottom:20px;}
+            .survey-accordion-group{margin-bottom:2px;/*border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*/}
+            .survey-accordion-heading{border-bottom:0;}
+            .survey-accordion-heading .survey-accordion-toggle{display:block;padding:8px 0px;}
+            .survey-accordion-toggle{cursor:pointer;}
+            
+            .survey-accordion-inner {
+                padding:9px 15px;
+                border-top:1px solid #777777;
+            }
+
             /* Marketing Copy & Footer */
             .copy {
                 padding-top: 2.5%;
@@ -124,12 +156,12 @@
 
             <div class="row-fluid heading">
                 <div class="span12">
-                    <h1>Bitstarter Title</h1>
+                    <h1>Travel Map Apps</h1>
                 </div>
             </div>
             <div class="row-fluid subheading">
                 <div class="span12">
-                    <p class="lead">This is my first bitstarter project.</p>
+                    <p class="lead">Better maps for the avid traveler.</p>
                 </div>
             </div>
             <div class="row-fluid pitch">
@@ -141,12 +173,12 @@
                 <div class="span5 actions">
                     <div class="span8 offset2">
                         <div class="statistics">
-                            <div class="span4">
-                                <div class="linediv-l">
-                                    <h3>1000</h3> <p>backers</p>
+                            <div class="span12">
+                                <div class="linediv-c">
+                                    <h3>0</h3> <p>responses</p>
                                 </div>
                             </div>
-                            <div class="span4">
+                            <!--div class="span4">
                                 <div class="linediv-c">
                                     <h3>$6000</h3> <p>of $10,000</p>
                                 </div>
@@ -155,22 +187,46 @@
                                 <div class="linediv-r">
                                     <h3>1</h3> <p>hour left</p>
                                 </div>
-                            </div>
+                            </div-->
                         </div>
                     </div>
                     <div class="span10 offset1">
+                    <!--div class="span12"-->
                         <!-- bootstrap progress bar -->
-                        <div class="thermometer progress active">
-                            <div class="bar bar-success" style="width: 60%"></div>
-                            <div class="bar bar-warning" style="width: 40%"></div>
+                        <div class="span2 statistics"><p>Text</p></div>
+                        <div class="span10">
+                            <div class="thermometer progress active">
+                                <div class="bar bar-success" style="width: 60%"></div>
+                                <!--div class="bar bar-warning" style="width: 40%"></div-->
+                            </div>
                         </div>
                     </div>
-                    <div class="span6 offset3 order">
+                    <!--div class="span6 offset3 order">
                         <button class="btn btn-success btn-large">Preorder</button>
-                    </div>
+                    </div-->
                     <div class="span8 offset2 social">
                         <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
                         <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Survey form -->
+             <div class="row-fluid survey">
+                <div class="span10 offset1">
+                    <div class="survey-container">
+                        <h3>Survey</h3>
+                        <div class="survey-accordion-group">
+                            <div class="survey-accordion-heading">
+                                <a class="survey-accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Privacy Policy</a>
+                            </div>
+                            <div class="survey-accordion-body collapse" id="collapseThree">
+                                <div class="survey-accordion-inner">
+                                    <p>Privacy Policy Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
