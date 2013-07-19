@@ -99,6 +99,12 @@
                 /*padding:9px 15px;*/
             }
 
+            .survey-radio-buttons {
+                float: left;
+                clear: none;
+                color: white;
+            }
+
             .survey-accordion{margin-bottom:20px;}
             .survey-accordion-group{margin-bottom:2px;/*border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*/}
             .survey-accordion-heading{border-bottom:0;}
@@ -216,6 +222,33 @@
                 <div class="span10 offset1">
                     <div class="survey-container">
                         <h3>Survey</h3>
+                        <div class="survey-form">
+                            <form>
+                                <p>
+                                    <label>Which destination interests you the most?</label>
+                                    <div class="survey-radio-buttons">                 
+                                        <input type="radio" name="destination" id="destYangshuo" value="yangshuo" />
+                                        <label for="annapurna">Yangshuo, China</label>
+                                    </div> 
+                                    <div class="survey-radio-buttons">   
+                                        <input type="radio" name="destination" id="destKohPhangan" value="" />
+                                        <label for="kohPhangan">Koh Phangan, Thailand</label>
+                                    </div>
+                                    <div class="survey-radio-buttons">
+                                        <input type="radio" name="destination" id="destGeorgeTown" value="georgetown" />
+                                        <label for="georgetown">Georgetown, Panang, Malaysia</label><br />
+                                    </div>
+                                    <div class="survey-radio-buttons">
+                                        <input type="radio" name="destination" id="destAnnapurnaCircuit" value="annapurna" />
+                                        <label for="annapurna">Annapurna Circuit, Nepal</label>
+                                    </div>                                    
+                                </p>
+                                <p>
+
+                                </p>
+
+                            </form>
+                        </div>
                         <div class="survey-accordion-group">
                             <div class="survey-accordion-heading">
                                 <a class="survey-accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Privacy Policy</a>
